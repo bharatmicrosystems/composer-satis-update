@@ -1,17 +1,17 @@
 # composer-satis-update
 
-#Complementary tool to Satis for updating the satis.json "require" key from the project composer.json.
+# Complementary tool to Satis for updating the satis.json "require" key from the project composer.json.
 
 This is particularly useful if you are mirroring for git repositories and package zip files (dist files).
 
-##Problem description
+## Problem description
 If you use in satis.json ``"require-all": true`, you will have all versions of all packages in the repositories you defined which can take a lot of disk space
 
 OR
 
 You can choose to manually maintain the "require" key which can be time-consuming if you have a lot of packages.
 
-##Usage
+## Usage
 java -jar satis-update.jar
     [-c|--composerjson <composer>] Path to the project composer.json file
     [-a|--authjson <authJson>] Path to the auth.json file 
@@ -73,5 +73,6 @@ satis.json will look like:
 Now build Satis as before:
 
 php bin/satis build satis.json web/
+
 License
-Composer Satis Builder is licensed under the MIT License - see the LICENSE file for details
+Composer Satis Update is licensed under the MIT License - see the LICENSE file for details
