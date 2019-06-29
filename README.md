@@ -1,6 +1,6 @@
 # composer-satis-update
 
-# Complementary tool to Satis for updating the satis.json "require" key from the project composer.json.
+### Complementary tool to Satis for updating the satis.json "require" key from the project composer.json.
 
 This is particularly useful if you are mirroring for git repositories and package zip files (dist files).
 
