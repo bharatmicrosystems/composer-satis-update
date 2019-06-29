@@ -24,7 +24,7 @@ Example
 Given
 
 satis.json
-
+```
 {
     "name": "My Repository",
     "homepage": "http://localhost:7777",
@@ -34,10 +34,11 @@ satis.json
     "require": {
     }
 }
+```
 and
 
 composer.json
-
+```
 {
     "name": "mycompany/mycompany-project",
     "require": {
@@ -53,15 +54,20 @@ composer.json
         }
     ]
 }
+```
 and Composer Satis Builder is installed:
-
+```
 php composer.phar create-project aoe/composer-satis-builder --stability=dev
+```
 After running
 
+```
 java -jar satis-update.jar -c /path/to/composer.json -g github.com -h satis.dev.com -j /path/to/satis.json
+```
 
 satis.json will look like:
 
+```
 {
     "name": "My Repository",
     "homepage": "http://localhost:7777",
@@ -72,9 +78,12 @@ satis.json will look like:
         "mycompany/privaterepo": "^1.3"
     },
 }
+```
+
 Now build Satis as before:
 
+```
 php bin/satis build satis.json web/
-
+```
 License
 Composer Satis Update is licensed under the MIT License - see the LICENSE file for details
