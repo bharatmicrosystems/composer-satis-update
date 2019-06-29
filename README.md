@@ -12,12 +12,14 @@ OR
 You can choose to manually maintain the "require" key which can be time-consuming if you have a lot of packages.
 
 ## Usage
+```
 java -jar satis-update.jar
     [-c|--composerjson <composer>] Path to the project composer.json file
     [-a|--authjson <authJson>] Path to the auth.json file 
     [-g|--giturl <gitUrl>] Base git url (example https://github.com)
     [-h|--satishostname <satisHostName>] Satis host name (example satis.dev.com)
     [-j|--satisjsonpath <satis>] Path to the satis.json configuration file
+```
 Example
 Given
 
